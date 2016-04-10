@@ -53,6 +53,36 @@ See the progress usually it's takes several minutes to be done.
 
 # Setting Up the Web Service
 
+## In case we want to improve our AisUserBundle
+
+```text
+
+dev-ais-api$ git clone https://github.com/theredfoxfire/ais-user-bundle.git src/Ais/UserBundle
+
+```
+
+Once we finished, update our `app/AppKernel.php`
+
+```php
+// app/AppKernel.php
+use Symfony\Component\HttpKernel\Kernel;
+use Symfony\Component\Config\Loader\LoaderInterface;
+
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = array(
+            ...
+            new Ais\UserBundle\AisUserBundle(),
+            ...
+        );
+        ...
+    ...
+...
+
+```
+
 Ok, So everything is installed on our kit. To setting up the web service, first thing to do is
 
 update your parameters.yml setting up with your environment
