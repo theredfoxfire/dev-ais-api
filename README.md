@@ -83,6 +83,8 @@ class AppKernel extends Kernel
 
 ```
 
+In this repo I already set up exactly for ais-user-bundle so in other case if we prefer another AIS bundle please take attention to the following file `app/config/config.yml`, `app/config/routing.yml`, `app/config/security.yml`
+
 Ok, So everything is installed on our kit. To setting up the web service, first thing to do is
 
 update your parameters.yml setting up with your environment
