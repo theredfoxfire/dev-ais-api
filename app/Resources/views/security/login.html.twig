@@ -1,0 +1,40 @@
+{% block body %}
+<div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1>AIS Web Service</h1>
+                            <div class="description">
+                            	<h4>
+	                            	Academic Information System
+                            	</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        	{% if error %}
+								<div class='text-center alert alert-danger'><b>{{ error.messageKey|trans(error.messageData, 'security') }}</b></div>
+							{% endif %}
+                        		<div class="text-center">
+                        			<h1><i class="fa fa-lock"></i></h1>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+								<form action="{{ path('ais_oauth_server_auth_login_check') }}" method="post" class="login-form">
+									<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+			                    	<div class="form-group">
+			                    		<label for="form-username">Username</label>
+			                        	<input type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Username..." class="form-username form-control">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label for="form-password">Password</label>
+			                        	<input type="password" id="password" name="_password" required="required" placeholder="Password..." class="form-password form-control">
+			                        </div>
+			                        <button type="submit" class="btn btn-info">MASUK!</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                 </div>
+{% endblock %}

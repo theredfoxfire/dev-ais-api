@@ -1,0 +1,26 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+ais_users:
+    type: rest
+    prefix: /api
+    resource: "@AisUserBundle/Resources/config/routes.yml"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /service/api/doc
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+
+fos_oauth_server_authorize:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+
+ais_oauth_server_auth_login:
+    pattern:  /oauth/v2/auth_login
+    defaults: { _controller: AisUserBundle:Security:login }
+
+ais_oauth_server_auth_login_check:
+    pattern:  /oauth/v2/auth_login_check
+    defaults: { _controller: AisUserBundle:Security:loginCheck }
