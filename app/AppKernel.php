@@ -20,7 +20,6 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new AppBundle\AppBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-    	      new Ais\UserBundle\AisUserBundle(),
 			      new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
         );
 
