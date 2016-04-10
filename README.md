@@ -23,7 +23,7 @@ for more detail explanation please visit this page:
 [Setting up Git](https://help.github.com/articles/set-up-git/)
 
 ```
-$ git clone https://github.com/theredfoxfire/ais-web-service.git
+$ git clone https://github.com/theredfoxfire/dev-ais-api.git
 ```
 
 Wait till the clone process is done.
