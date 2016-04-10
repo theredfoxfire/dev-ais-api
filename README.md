@@ -8,7 +8,7 @@ A system that provide Academic Information we name it AIS Academic Information S
 Go to your working directory with your terminal (command line)
 
 ```
-$ cd your-working-dirwctory
+$ cd your-working-directory
 ```
 
 Then run the Git command to clone the bundle, if not yet install Git on your system just run this command (ubuntu):
