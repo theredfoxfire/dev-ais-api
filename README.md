@@ -149,6 +149,13 @@ http://127.0.0.1:8000
  http://127.0.0.1:8000/service/api/doc
 ```
 
+## Future read
+
+To feed the dummy data and start sending request please visit the link below.
+
+[AIS-WEB-SERVICE](https://github.com/theredfoxfire/ais-web-service)
+
+
 You can find out the available url API by type this command:
 
 ```
