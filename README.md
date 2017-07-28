@@ -153,7 +153,7 @@ http://127.0.0.1:8000
 
 To feed the dummy data and start sending request please visit the link below.
 
-[AIS-WEB-SERVICE](https://github.com/theredfoxfire/ais-web-service)
+[AIS-WEB-SERVICE](https://github.com/theredfoxfire/ais-web-service#start-consuming-the-api)
 
 
 You can find out the available url API by type this command:
